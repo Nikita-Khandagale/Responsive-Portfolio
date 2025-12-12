@@ -1,0 +1,219 @@
+
+/* =======================
+   For large screens <=1400px
+   ======================= */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+/* =======================
+   For medium screens <=1200px (tablets)
+   ======================= */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+    margin: 1.5rem 0;
+  }
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Education Section */
+  #education,
+  .education-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .education-item {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Skills Section */
+  #skills,
+  .skills-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .skill-item {
+    flex: 1 1 45%;
+    min-width: 140px;
+    max-width: 220px;
+    background: #f7f7f7;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* =======================
+   For small screens <=600px (mobile)
+   ======================= */
+@media screen and (max-width: 600px) {
+  /* Profile */
+  #profile {
+    height: auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  /* Article text size */
+  article {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Footer nav adjustments */
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  /* Flex containers wrap and center */
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Contact info spacing */
+  .contact-info-container {
+    margin: 0 1rem;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  /* Experience subtitle size */
+  .experience-sub-title {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Logo size */
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Nav links stacked */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  /* Section pictures responsive */
+  .section__pic-container {
+    width: 90vw;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 1.5rem;
+  }
+
+  /* Section text */
+  .section__text__p2 {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+
+  /* Titles */
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Text container justify */
+  .text-container {
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  /* Contact & Footer height */
+  #contact,
+  footer {
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  /* Education Section */
+  #education,
+  .education-container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .education-item {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  /* Skills Section */
+  #skills,
+  .skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+  }
+  .skill-item {
+    width: 90%;
+    background: #f7f7f7;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.12);
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
